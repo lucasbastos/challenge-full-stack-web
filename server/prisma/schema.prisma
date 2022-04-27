@@ -8,7 +8,7 @@ datasource db {
 }
 
 model students {
-  id        String   @id
+  id        String   @id @default(uuid())
   name      String   @db.VarChar(255)
   email     String   @unique @db.VarChar(255)
   ra        Int      @unique

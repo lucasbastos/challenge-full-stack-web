@@ -7,3 +7,10 @@ export interface Student {
     createdAt: Date;
     updatedAt: Date;
 }
+
+export interface StudentInput {
+    name: string;
+    email: string;
+    ra: number;
+    cpf: string;
+}
